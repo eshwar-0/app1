@@ -7,7 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 # load_dotenv()
-api_token = "HUGGINGFACEHUB_API_TOKEN"
+api_token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 repo_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
 task = "text-generation"
 
